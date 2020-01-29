@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.lambton;
 
+package com.lambton;
+import java.util.regex.Pattern;
 /**
  *
  * @author Pritesh Patel
@@ -15,13 +16,18 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
+        Pattern pattern = Pattern.compile("\\s");
+        String[] temp = pattern.split(s);
         String rev = "";
-
-        for(int i = s.length() - 1; i >= 0; i--)
-        { rev = rev + s.charAt(i);
+        for (int i = 0; i < temp.length; i++) {
+            if (i == temp.length - 1)
+                rev = temp[i] + rev;
+            else
+                rev = " " + temp[i] + rev;
         }
         return rev;
     }
+
 
 
 
