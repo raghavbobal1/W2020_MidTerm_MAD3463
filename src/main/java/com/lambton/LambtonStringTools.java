@@ -71,7 +71,17 @@ public class LambtonStringTools
         int n = 0;
         while(true){
             if(binary == 0)
-        
+            {
+                break;
+            } else {
+                int temp = binary%10;
+                decimal += temp*Math.pow(2, n);
+                binary = binary/10;
+                n++;
+            }
+        }
+        return decimal;
+    }
 
         //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
     public static String replaceSubString(String originalString, String findString, String newString)
