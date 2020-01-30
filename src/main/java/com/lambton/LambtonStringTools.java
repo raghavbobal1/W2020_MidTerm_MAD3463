@@ -60,7 +60,13 @@ public class LambtonStringTools
 
             for (int i = 0; i < len; i++) {
                 if (max < count[s.charAt(i)]) {
-         
+                    max = count[s.charAt(i)];
+                    result = s.charAt(i);
+                }
+            }
+
+            return String.valueOf(result);
+        }
 
     }
 
