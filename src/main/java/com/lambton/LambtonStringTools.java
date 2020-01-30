@@ -54,7 +54,13 @@ public class LambtonStringTools
             for (int i=0; i<len; i++)
                 count[s.charAt(i)]++;
 
-          
+            int max = -1;
+            char result = ' ';
+
+
+            for (int i = 0; i < len; i++) {
+                if (max < count[s.charAt(i)]) {
+         
 
     }
 
