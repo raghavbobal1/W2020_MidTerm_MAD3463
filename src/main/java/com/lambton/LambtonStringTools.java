@@ -43,8 +43,16 @@ public class LambtonStringTools
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
     public static String mostFrequent(String s)
     {
-        return null;
+        final int ASCII_SIZE = 256;
+        char maxch;
+        {
+
+            int count[] = new int[ASCII_SIZE];
+
+
+
     }
+
 
     //4 - CONVERT BINARY NUMBER TO DECIMALS
     public static int binaryToDecimal(String s)
