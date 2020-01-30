@@ -65,14 +65,15 @@ public class LambtonStringTools
 
 
     //4 - CONVERT BINARY NUMBER TO DECIMALS
-    public static int binaryToDecimal(String s)
+    public static int binaryToDecimal( int binary)
     {
-        String binaryString = "1010";
+        int decimal = 0;
+        int n = 0;
+        while(true){
+            if(binary == 0)
+        
 
-
-
-
-    //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
+        //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
     public static String replaceSubString(String originalString, String findString, String newString)
     {
         return null;
