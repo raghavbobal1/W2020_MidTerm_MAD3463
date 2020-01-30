@@ -44,27 +44,20 @@ public class LambtonStringTools
     public static String mostFrequent(String s)
     {
         final int ASCII_SIZE = 256;
-        char maxch;
-        {
+        { int count[] = new int[ASCII_SIZE];
+        int len = s.length();
+        for (int i=0; i<len; i++)
+            count[s.charAt(i)]++;
+        int max = -1;
+        char result = ' ';
 
-            int count[] = new int[ASCII_SIZE];
-
-
-            int len = s.length();
-            for (int i=0; i<len; i++)
-                count[s.charAt(i)]++;
-
-            int max = -1;
-            char result = ' ';
-
-
-            for (int i = 0; i < len; i++) {
-                if (max < count[s.charAt(i)]) {
-                    max = count[s.charAt(i)];
-                    result = s.charAt(i);
-                }
+        for (int i = 0; i < len; i++) {
+            if (max < count[s.charAt(i)])
+            {
+            max = count[s.charAt(i)];
+            result = s.charAt(i);
             }
-
+            }
             return String.valueOf(result);
         }
 
@@ -74,8 +67,10 @@ public class LambtonStringTools
     //4 - CONVERT BINARY NUMBER TO DECIMALS
     public static int binaryToDecimal(String s)
     {
-       return 0;
-    }
+        String binaryString = "1010";
+
+
+
 
     //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
     public static String replaceSubString(String originalString, String findString, String newString)
