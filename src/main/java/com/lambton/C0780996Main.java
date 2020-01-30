@@ -30,7 +30,7 @@ public class C0780996Main {
         System.out.println("\n--- Init");
         String init = LambtonStringTools.initials("pritesh kumar pAtEl");
         System.out.println("Input  : pritesh kumar pAtEl");
-        System.out.println("Output : " + init);
+        System.out.println("Output :" + init );
         
         System.out.println("\n--- Binary to Decimal");
         int decimal = LambtonStringTools.binaryToDecimal("101010");

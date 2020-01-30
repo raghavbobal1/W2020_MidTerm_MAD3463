@@ -28,15 +28,14 @@ public class LambtonStringTools
         return rev;
     }
 
-
-
-
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s)
-    {
+        {
+            if (s.length() == 0)
+            { System.out.println("NULL");}
 
-        return null;
-    }
+
+        }
 
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
     public static String mostFrequent(String s)
