@@ -36,7 +36,9 @@ public class LambtonStringTools
 
             for (int i = 1; i < s.length() - 1; i++)
             if (s.charAt(i) == ' ')
-            
+                System.out.print(" " + Character.toUpperCase(s.charAt(i + 1)));
+            return s;
+        }
 
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
     public static String mostFrequent(String s)
