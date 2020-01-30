@@ -50,6 +50,11 @@ public class LambtonStringTools
             int count[] = new int[ASCII_SIZE];
 
 
+            int len = s.length();
+            for (int i=0; i<len; i++)
+                count[s.charAt(i)]++;
+
+          
 
     }
 
